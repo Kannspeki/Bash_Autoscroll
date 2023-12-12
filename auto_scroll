@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+
+err=$(lsof ~/Dropbox/Documentos/Code/src/Bash/Scripts/autoclick | wc -l)
+if [[ "$err" -eq 2 ]]; then
+    pid=$(lsof ~/Dropbox/Documentos/Code/src/Bash/Scripts/autoclick | tail -n 1 | awk '{print $2}') 
+    kill -CONT "$pid"
+else
+    exec ~/Dropbox/Documentos/Code/src/Bash/Scripts/autoclick
+fi
