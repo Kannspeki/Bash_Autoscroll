@@ -20,6 +20,7 @@ A simple pure bash autoscroll
   Shift + Pause
   
   ### Stops auto scroll
-   "~/auk"
-  Alt + Next```
+   "~/auto_scroll_stop"
+  Alt + Next
+  ```
  
